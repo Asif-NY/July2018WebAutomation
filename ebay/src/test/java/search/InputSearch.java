@@ -9,6 +9,6 @@ public class InputSearch extends CommonAPI{
 
     @Test
     public void search(){
-        driver.findElement(By.cssSelector("#twotabsearchtextbox")).sendKeys("Laptop", Keys.ENTER);
+        driver.findElement(By.className("gh-tb ui-autocomplete-input")).sendKeys("TV", Keys.ENTER);
     }
 }

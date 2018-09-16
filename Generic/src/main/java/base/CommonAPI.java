@@ -16,8 +16,8 @@ public class CommonAPI {
 
     @Parameters({"url"})
     @BeforeMethod
-    public void setUp(@Optional("https://www.amazon.com/") String url){
-        System.setProperty("webdriver.gecko.driver", "/Users/peoplentech/develop/SeleniumJuly2018/WebAutomation/Generic/browser-driver/geckodriver");
+    public void setUp(@Optional("https://www.ebay.com") String url){
+        System.setProperty("webdriver.gecko.driver", "/Users/asifchowdhury/Desktop/untitled folder/Generic/browser-driver/geckodriver");
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(url);
